@@ -17,24 +17,24 @@ Con `useState`, puedes dar vida a tus componentes dándoles la capacidad de reco
 
 El gancho useState te permite agregar estados a tus componentes funcionales. Es como una varita mágica que permite a tus componentes recordar información entre renderizaciones. 🧠✨
 
-´´´
-import React, { useState } from 'react';
+```
+    import React, { useState } from 'react';
 
-const Contador = () => {
-  const [contador, setContador] = useState(0);
+    const Contador = () => {
+    const [contador, setContador] = useState(0);
 
-  const incrementar = () => {
-    setContador(contador + 1);
-  };
+    const incrementar = () => {
+        setContador(contador + 1);
+    };
 
-  return (
-    <div>
-      <p>Contador: {contador}</p>
-      <button onClick={incrementar}>Incrementar</button>
-    </div>
-  );
-};
-´´´
+    return (
+        <div>
+        <p>Contador: {contador}</p>
+        <button onClick={incrementar}>Incrementar</button>
+        </div>
+    );
+    };
+```
 
 ### `useEffect`: El Encanto de la Sincronización 🔄 y La Poción del Ciclo de Vida 🧪⏳
 
@@ -42,23 +42,23 @@ const Contador = () => {
 
 El hechizo useEffect te permite realizar acciones adicionales después de que un componente se monta, se actualiza o se desmonta. Es como una poción que se activa en momentos específicos del ciclo de vida del componente. 🔄🌟
 
-´´´
-import React, { useEffect, useState } from 'react';
+```
+    import React, { useEffect, useState } from 'react';
 
-const MensajeTemporal = () => {
-  const [visible, setVisible] = useState(true);
+    const MensajeTemporal = () => {
+    const [visible, setVisible] = useState(true);
 
-  useEffect(() => {
-    const temporizador = setTimeout(() => {
-      setVisible(false);
-    }, 3000);
+    useEffect(() => {
+        const temporizador = setTimeout(() => {
+        setVisible(false);
+        }, 3000);
 
-    return () => clearTimeout(temporizador);
-  }, []);
+        return () => clearTimeout(temporizador);
+    }, []);
 
-  return visible && <p>¡Bienvenido! Este mensaje desaparecerá en 3 segundos.</p>;
-};
-´´´
+    return visible && <p>¡Bienvenido! Este mensaje desaparecerá en 3 segundos.</p>;
+    };
+```
 ### `useContext`: La Comunicación en el Reino 🗣️ y El Encantamiento de la Comunicación 🧙‍♂️💬
 
 `useContext` es como un mensajero mágico que facilita la comunicación entre diferentes partes de tu aplicación. Puedes compartir información fácilmente sin tener que pasarla a través de muchos intermediarios. 🧙‍♂️💬
