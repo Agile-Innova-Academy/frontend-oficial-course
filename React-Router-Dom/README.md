@@ -33,27 +33,31 @@ Los Ganchos en React Router DOM son como potentes herramientas de navegación qu
 Estas son solo algunas de las herramientas mágicas que React Router DOM y sus Ganchos ofrecen para hacer que la navegación en tu aplicación sea tan emocionante como explorar un nuevo territorio. ¡Prepárate para embarcarte en una aventura web increíble! 🚀🌈
 
 ### `useNavigate`: La Brújula de la Navegación 🧭🚀
+
 El gancho useNavigate es como tu brújula personal para la navegación dinámica. Te permite cambiar de página programáticamente, ofreciendo un control total sobre la dirección de tu viaje web. Es como tener el poder de decidir a dónde dirigirte a continuación. 🗺️🚀
 
 ### `useLocation`: La Linterna en la Oscuridad 🕵️‍♂️🔦
+
 useLocation es como una linterna que ilumina tu ubicación actual en la aplicación. Este gancho te proporciona información sobre la URL actual, permitiéndote adaptar tu contenido según el contexto. Es esencial para entender dónde te encuentras en tu aventura digital. 🌍🔍
 
 ### Ejemplo Práctico: Navegación Dinámica con Detalles 🚪🔍
+
 Vamos a explorar un ejemplo práctico. Imagina que estás construyendo una aplicación de exploración de libros, donde cada libro tiene su propia página con detalles emocionantes. Primero, configuramos nuestras rutas dinámicamente:
+
 ```
-        import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-        import { Libro } from './Libro';
-        import { useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Libro } from './Libro';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-        const libros = ['Harry Potter', 'Cazadores de Sombras', 'El Señor de los Anillos'];
+const libros = ['Harry Potter', 'Cazadores de Sombras', 'El Señor de los Anillos'];
 
-        const Biblioteca = () => {
-        const navigate = useNavigate();
-        const location = useLocation();
+   const Biblioteca = () => {
+    const navigate = useNavigate();
+   const location = useLocation();
 
-        return (
-            <Router>
-            <div>
+   return (
+       <Router>
+       <div>
                 {/* Navegación dinámica basada en los libros */}
                 <ul>
                 {libros.map((libro) => (
@@ -72,25 +76,28 @@ Vamos a explorar un ejemplo práctico. Imagina que estás construyendo una aplic
 
                 <p>Ubicación actual: {location.pathname}</p>
                 <button onClick={() => navigate('/')}>&larr; Volver a la Biblioteca</button>
-            </div>
-            </Router>
-        );
-        };
+     </div>
+    </Router>
+ );
+    };
 ```
+
 En este ejemplo, cada libro se convierte en un enlace en nuestra lista de navegación. Las rutas se crean dinámicamente, y useNavigate nos permite volver a la biblioteca con un clic en el botón.
 
 El componente Libro podría ser algo así:
 
-```        import React from 'react';
-
-            export const Libro = ({ nombre }) => {
-            return (
-                <div>
-                <h2>{nombre}</h2>
-                {/* Agrega detalles interesantes sobre el libro */}
-                {/* ... */}
-                </div>
-            );
-            };
 ```
+import React from 'react';
+
+    export const Libro = ({ nombre }) => {
+    return (
+        <div>
+        <h2>{nombre}</h2>
+        {/* Agrega detalles interesantes sobre el libro */}
+        {/* ... */}
+         </div>
+    );
+    };
+```
+
 -[React Router Dom](https://reactrouter.com/en/main/start/tutorial)
