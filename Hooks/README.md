@@ -65,66 +65,66 @@ const MensajeTemporal = () => {
 
 El gancho useContext facilita la comunicación entre componentes sin necesidad de pasar propiedades manualmente. Es como un mensaje mágico que puede viajar a través de tu aplicación. 📨✉️
 
-´´´
-import React, { createContext, useContext } from 'react';
+```
+    import React, { createContext, useContext } from 'react';
 
-const TemaContexto = createContext();
+    const TemaContexto = createContext();
 
-const ComponenteHijo = () => {
-  const tema = useContext(TemaContexto);
+    const ComponenteHijo = () => {
+    const tema = useContext(TemaContexto);
 
-  return <p style={{ color: tema }}>¡Soy un componente de color mágico!</p>;
-};
-´´´
+    return <p style={{ color: tema }}>¡Soy un componente de color mágico!</p>;
+    };
+```
  ### `useReducer`: El Sortilegio de la Gestión de Estados Complejos 🧙‍♀️🔄
 useReducer es como una varita que te ayuda a manejar estados más complejos de manera más organizada, especialmente cuando tienes lógica de estado más avanzada. 🗝️📦
 
-´´´
-import React, { useReducer } from 'react';
+```
+    import React, { useReducer } from 'react';
 
-const initialState = { contador: 0 };
+    const initialState = { contador: 0 };
 
-const reducer = (estado, accion) => {
-  switch (accion.type) {
-    case 'incrementar':
-      return { contador: estado.contador + 1 };
-    default:
-      return estado;
-  }
-};
+    const reducer = (estado, accion) => {
+    switch (accion.type) {
+        case 'incrementar':
+        return { contador: estado.contador + 1 };
+        default:
+        return estado;
+    }
+    };
 
-const ContadorAvanzado = () => {
-  const [estado, dispatch] = useReducer(reducer, initialState);
+    const ContadorAvanzado = () => {
+    const [estado, dispatch] = useReducer(reducer, initialState);
 
-  return (
-    <div>
-      <p>Contador: {estado.contador}</p>
-      <button onClick={() => dispatch({ type: 'incrementar' })}>Incrementar</button>
-    </div>
-  );
-};
-´´´
+    return (
+        <div>
+        <p>Contador: {estado.contador}</p>
+        <button onClick={() => dispatch({ type: 'incrementar' })}>Incrementar</button>
+        </div>
+    );
+    };
+```
 ### `useMemo y useCallback`: Encantamientos de Optimización 🛠️🚀
 useMemo y useCallback son como hechizos que te permiten optimizar el rendimiento de tu aplicación al memoizar valores y funciones. 🎯💡
 
-´´´
-import React, { useMemo, useCallback } from 'react';
+```
+    import React, { useMemo, useCallback } from 'react';
 
-const ComponenteOptimizado = ({ datos }) => {
-  const resultadoCostoso = useMemo(() => realizarCalculoCostoso(datos), [datos]);
+    const ComponenteOptimizado = ({ datos }) => {
+    const resultadoCostoso = useMemo(() => realizarCalculoCostoso(datos), [datos]);
 
-  const handleClick = useCallback(() => {
-    // Lógica del clic optimizada
-  }, []);
+    const handleClick = useCallback(() => {
+        // Lógica del clic optimizada
+    }, []);
 
-  return (
-    <div>
-      <p>Resultado: {resultadoCostoso}</p>
-      <button onClick={handleClick}>Hacer Algo</button>
-    </div>
-  );
-};
-´´´
+    return (
+        <div>
+        <p>Resultado: {resultadoCostoso}</p>
+        <button onClick={handleClick}>Hacer Algo</button>
+        </div>
+    );
+    };
+```
 
 Estos son solo algunos de los increíbles hooks que React ofrece. Cada uno tiene su propio encanto y puede mejorar diferentes aspectos de tus componentes. ¡Explora y experimenta con estos hechizos para hacer tus aplicaciones aún más mágicas! 🧙‍♂️🔮
 
