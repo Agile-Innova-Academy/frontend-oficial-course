@@ -125,3 +125,5 @@ Finalmente, iniciemos nuestra aplicación y veamos cómo la mochila mágica de R
 ### Conclusión Mágica 🌟
 Así que, pequeño explorador, Redux es como tener una mochila mágica que te ayuda a organizar y recordar todas las cosas importantes cuando construyes cosas increíbles en el mundo de React. ¡Que tu aventura con Redux sea emocionante y llena de descubrimientos! 🚀🔮
 
+
+
