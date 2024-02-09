@@ -1,0 +1,25 @@
+{
+  "persona": [
+    {
+      "nombre": "Yudith Leon",
+      "tipo": "C.C",
+      "numero": "1000000",
+      "celular": "3001234567",
+      "direccion": "Bogotá- Calle 52",
+      "imagen": "https://res.cloudinary.com/danimel/image/upload/v1702668661/Netflix/Frame_29_1_ysbk0d.png"
+    }
+  ],
+  "movies": [
+    {
+      "id": "3",
+      "Title": "Star Wars: The Force Awakens",
+      "Year": "2015",
+      "Value": 7.8,
+      "Carrusel": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6bf4fe463fc97e53495f870e5ddcfca864c129d69e4b60e7d0b5793ac92f2ac5._V_SX450_.jpg",
+      "Description": "A music-loving kinkajou named Vivo embarks on the journey of a lifetime to fulfill his destiny and deliver a love song for an old friend.",
+      "Type": "movie",
+      "Trailer": "https://www.youtube.com/embed/sGbxmsDFVnE",
+      "Poster": "https://www.themoviedb.org/t/p/original/eRLlrhbdYE7XN6VtcZKy6o2BsOw.jpg"
+    }
+  ]
+}
