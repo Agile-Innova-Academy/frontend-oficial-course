@@ -7,6 +7,14 @@ return {
 }
 }
 
+export const actionEditProductSyn = (payload) => {
+  
+  return {
+    type: typesProducts.edit,
+    payload,
+  };
+};
+
 export const actionDeleteProductSyn = (payload) => {
   return {
     type: typesProducts.delete,
