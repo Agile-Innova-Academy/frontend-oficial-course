@@ -1,4 +1,13 @@
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  deleteDoc,
+  doc,
+  getDocs,
+  query,
+  updateDoc,
+  where,
+} from "firebase/firestore";
 import { typesProducts } from "../types/types";
 import { dataBase } from "../../firebase/firebaseConfig";
 // ------------------Listar---------------------
@@ -12,6 +21,7 @@ export const actionListproductAsyn = () => {
         ...p.data(),
       });
     });
+    console.log("LA LISTA DE FIRESTORE", pro);
     dispatch(actionListproductSyn(pro));
   };
 };
@@ -42,7 +52,26 @@ export const actionAddproductSyn = (payload) => {
   };
 };
 
-// ---------------------------------------
+// ------------------Editar---------------------
+export const actionEditProductAsyn = (payload) => {
+  return async (dispatch) => {
+    let uid = "";
+    const collectionP = collection(dataBase, "Products");
+    const q = query(collectionP, where("id", "==", payload.id));
+    const datosQ = await getDocs(q);
+    datosQ.forEach((docu) => {
+      uid = docu.id;
+    });
+    const docRef = doc(dataBase, "Products", uid);
+    await updateDoc(docRef, payload)
+      .then((resp) => {
+        dispatch(actionEditProductSyn(payload));
+        dispatch(actionListproductAsyn());
+      })
+      .catch((error) => console.log(error));
+  };
+};
+
 export const actionEditProductSyn = (payload) => {
   return {
     type: typesProducts.edit,
@@ -50,7 +79,21 @@ export const actionEditProductSyn = (payload) => {
   };
 };
 
-// ---------------------------------------
+// ----------------Eliminar Productos-----------------------
+
+export const actionDeleteProductAsyn = (payload) => {
+  return async (dispatch) => {
+    const productosCollection = collection(dataBase, "Products");
+    const q = query(productosCollection, where("id", "==", payload));
+    const dataQ = await getDocs(q);
+    console.log(dataQ);
+
+    dataQ.forEach((docu) => {
+      deleteDoc(doc(dataBase, "Products", docu.id));
+    });
+    dispatch(actionDeleteProductSyn(payload));
+  };
+};
 
 export const actionDeleteProductSyn = (payload) => {
   return {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  actionDeleteProductSyn,
+  actionDeleteProductAsyn,
   actionListproductAsyn,
 } from "../redux/actions/actionsProduct";
 import EditProduct from "./EditProduct";
@@ -46,7 +46,7 @@ const List = () => {
               <td>{p.description}</td>
               <td>{p.price}</td>
               <td style={{ padding: 10 }}>
-                <Button onClick={() => dispatch(actionDeleteProductSyn(p.id))}>
+                <Button onClick={() => dispatch(actionDeleteProductAsyn(p.id))}>
                   X
                 </Button>
                 <Button variant="primary" onClick={() => handleShow(p)}>

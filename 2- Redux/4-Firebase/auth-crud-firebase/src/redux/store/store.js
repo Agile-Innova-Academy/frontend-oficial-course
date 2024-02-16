@@ -8,7 +8,7 @@ const middleware = [thunk];
 
 // Ojo: solo para el entorno de desarrollo ye sto me permite ver a la extensión de Redux en la consola
 const composeEnhancers =
-  window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE__ || compose;
+  window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE_ || compose;
 
 
 const reducers = combineReducers({

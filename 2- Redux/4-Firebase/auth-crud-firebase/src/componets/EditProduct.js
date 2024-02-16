@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import useForm from "../hooks/useForm";
-import { actionEditProductSyn } from "../redux/actions/actionsProduct";
+import { actionEditProductAsyn } from "../redux/actions/actionsProduct";
 import { useDispatch } from "react-redux";
 
 const EditProduct = ({ datos, handleClose }) => {
@@ -22,7 +22,7 @@ const EditProduct = ({ datos, handleClose }) => {
       price: formValue.price,
       description: formValue.des,
     };
-    dispatch(actionEditProductSyn(obj));
+    dispatch(actionEditProductAsyn(obj));
     handleClose();
   };
   return (
