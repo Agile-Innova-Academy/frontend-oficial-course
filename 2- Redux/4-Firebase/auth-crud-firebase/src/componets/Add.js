@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import useForm from "../hooks/useForm";
 import { Button, Form } from "react-bootstrap";
 import { actionAddproductAsyn } from "../redux/actions/actionsProduct";
+import { FileUpload } from "../helpers/FileUpload";
 
 const Add = () => {
   const dispatch = useDispatch();
@@ -10,6 +11,7 @@ const Add = () => {
     name: "",
     price: "",
     des: "",
+    foto: " ",
   });
 
   const handleSubmit = (e) => {
@@ -20,10 +22,19 @@ const Add = () => {
       name: formValue.name,
       price: formValue.price,
       description: formValue.des,
+      foto: formValue.foto,
     };
     dispatch(actionAddproductAsyn(obj));
     reset();
   };
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    console.log(file);
+    FileUpload(file)
+      .then((resp) => (formValue.foto = resp))
+      .catch((err) => console.warn(err));
+  };
+
   return (
     <div className="divAdd">
       <Form onSubmit={handleSubmit}>
@@ -64,6 +75,19 @@ const Add = () => {
             name="des"
             value={formValue.des}
             onChange={handleInputChange}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formPlaintextprice">
+          <Form.Label column sm="2">
+            Imagen
+          </Form.Label>
+
+          <Form.Control
+            type="file"
+            name="foto"
+            accept="*/jpg"
+            placeholder="Ingrese Foto.jpg"
+            onChange={handleFileChange}
           />
         </Form.Group>
 

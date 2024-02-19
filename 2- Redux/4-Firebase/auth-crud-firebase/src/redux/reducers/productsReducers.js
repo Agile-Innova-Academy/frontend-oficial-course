@@ -6,7 +6,7 @@ const initialState = {
 
 const productsReducers = (state = initialState, action) => {
   switch (action.type) {
-        case typesProducts.list:
+    case typesProducts.list:
       return {
         products: [...action.payload],
       };
@@ -18,6 +18,10 @@ const productsReducers = (state = initialState, action) => {
     case typesProducts.delete:
       return {
         products: state.products.filter((p) => p.id !== action.payload),
+      };
+    case typesProducts.search:
+      return {
+        products: action.payload,
       };
 
     case typesProducts.edit:

@@ -28,6 +28,9 @@ const Navbars = () => {
               <Nav.Link>
                 <Link to="/list">List</Link>
               </Nav.Link>
+              <Nav.Link>
+                <Link to="/search">Buscar</Link>
+              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Button

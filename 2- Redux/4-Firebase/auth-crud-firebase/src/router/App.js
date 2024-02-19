@@ -6,6 +6,7 @@ import PrivateRouter from "./PrivateRouter";
 import DashboarRouter from "./DashboarRouter";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Register from "../componets/Register";
+import RegisterFormik from "../componets/RegisterFormik";
 
 const App = () => {
   
@@ -37,7 +38,7 @@ const App = () => {
           path="/register"
           element={
             <PublicRouter isAutentication={user}>
-              <Register />
+              <RegisterFormik />
             </PublicRouter>
           }
         />

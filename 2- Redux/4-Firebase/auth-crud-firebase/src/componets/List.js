@@ -6,6 +6,7 @@ import {
   actionListproductAsyn,
 } from "../redux/actions/actionsProduct";
 import EditProduct from "./EditProduct";
+import ReactImageMagnify from "react-image-magnify";
 
 const List = () => {
   const dispatch = useDispatch();
@@ -35,6 +36,7 @@ const List = () => {
             <th>Nombre</th>
             <th>Descripción</th>
             <th>Precio</th>
+            <th>Imagen</th>
             <th>Acción</th>
           </tr>
         </thead>
@@ -45,6 +47,24 @@ const List = () => {
               <td>{p.name}</td>
               <td>{p.description}</td>
               <td>{p.price}</td>
+              <td>
+                <ReactImageMagnify
+                  {...{
+                    smallImage: {
+                      alt: "Imagen",
+                      isFluidWidth: true,
+                      src: p.foto,
+                      width: 50,
+                    },
+                    largeImage: {
+                      src: p.foto,
+                      width: 900,
+                      height: 800,
+                    },
+                  }}
+                />
+                {/* <img src={p.foto} alt="" width={"50%"} /> */}
+              </td>
               <td style={{ padding: 10 }}>
                 <Button onClick={() => dispatch(actionDeleteProductAsyn(p.id))}>
                   X

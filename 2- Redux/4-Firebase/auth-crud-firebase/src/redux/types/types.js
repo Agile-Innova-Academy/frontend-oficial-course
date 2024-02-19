@@ -9,5 +9,6 @@ export const typesProducts = {
   edit: "[products] edit",
   delete: "[products] delete",
   list: "[products] list",
+  search: "[products] search",
 };
 
