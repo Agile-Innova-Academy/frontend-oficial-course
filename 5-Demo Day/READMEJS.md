@@ -6,7 +6,7 @@ En este Proyecto a realizar vas a evidenciar los conceptos adquiridos en todo es
 
 # 🎯 Objetivo del DemoDay:
 
-Adquirir los conocimientos esenciales para realizar aplicaciones web dinámicas haciendo uso de JavaScript Vanilla, React, Redux 
+Adquirir los conocimientos esenciales para realizar aplicaciones web dinámicas haciendo uso de JavaScript Vanilla, React, Redux
 
 Con el Demo Day se pretende que los beneficiarios demuestren todos sus conocimientos adquiridos a empresas Nacionales e Internacionales, con esto pueden vivir la experiencia de exponer un proyecto y una idea de negocio al mundo.
 
@@ -18,45 +18,43 @@ Con el Demo Day se pretende que los beneficiarios demuestren todos sus conocimie
 
 1. Crear un proyecto con la plantilla Basic Kanban y en la descripción colocar:
 
->- Texto descriptivo.
->- Enlace del prototipo en alta fidelidad (marvel o herramienta usada).
->- Enlace del despliegue.
->- Enlace del video demo.
+> - Texto descriptivo.
+> - Enlace del prototipo en alta fidelidad (marvel o herramienta usada).
+> - Enlace del despliegue.
+> - Enlace del video demo.
 
 Todo esto usando markdown
 
 2. Crear dos milestones que corresponden a todo el desarrollo de la aplicación y se deben crear de esta forma:
 
->- **Componente Design Thinking:** Poner una descripción y los objetivos de ese componente.
->- **Componente técnico:** Poner una descripción y los objetivos de ese componente.
+> - **Componente Design Thinking:** Poner una descripción y los objetivos de ese componente.
+> - **Componente técnico:** Poner una descripción y los objetivos de ese componente.
 
 3. Crear issues por cada una de las tareas de Design Thinking:
 
->- 5 por qué
->- Perfil del cliente
->- Mapa de valor
->- Prototipo de baja fidelidad
->- Prototipo de mediana fidelidad
->- Presentación
+> - 5 por qué
+> - Perfil del cliente
+> - Mapa de valor
+> - Prototipo de baja fidelidad
+> - Prototipo de mediana fidelidad
+> - Presentación
 
 4. Crear issues por cada una de las tareas técnicas:
 
->- Readme profesional
->- Guía de estilos
->- Landing Page del producto
->- Diseño responsive
->- Autenticación con Google y Facebook
->- Enrutamiento dinámico con protección de rutas
->- 3 Crud con Firebase
->- Imágenes y/o videos en la nube
->- Aplicación de Formularios con Formik y Validaciones con Yup (Las contraseñas deben contener entre 8 a 10 caracteres entre Mayúsculas, minúsculas y números)
->- Al menos 2 componentes con TypeScript
->- Al menos 2 componentes con Pruebas Unitarias con Jest
->- Implementar un Plus en su proyecto
-
+> - Readme profesional
+> - Guía de estilos
+> - Landing Page del producto
+> - Diseño responsive
+> - Autenticación
+> - Realizar al menos 2 CRUD de productos (Crear, Listar, Modificar, Eliminar)
+> - Debe hacer uso de JS Vanilla
+> - Usar como marco de trabajo CSS el deseado
+> - Implementar JSON – SERVER
+> - Consumo de peticiones con fetch o axios
+> - En la página principal se debe cargar la data de los productos con imágenes
 
 5. Aquellos issues que consideren crear para su proceso de desarrollo se deben adjuntar al milestone de Componente Técnico.
 
-6. Cada uno de estos issues debe estar asignado a una o más intergrantes del equipo de desarrollo. 
+6. Cada uno de estos issues debe estar asignado a una o más intergrantes del equipo de desarrollo.
 
 7. Colocar etiquetas que logren diferenciar los diferentes issues según el componente al que corresponde.
