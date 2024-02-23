@@ -1,13 +1,13 @@
 ( ()=> {
     // -------------------String
-    var batman: string = "Batman";
-    var linternaVerde: string = "Linterna Verde";
+    let batman: string = "Batman"
+    let linternaVerde: string = "Linterna Verde";
     console.log("Datos String: ", batman, linternaVerde);
 
 
     // -------------Number-------------------------------------
-    var avengers: number = 10;
-    var villians: number = 15;
+    let avengers: number = 10;
+    let villians: number = 15;
     if (avengers > villians) {
         console.log("Estamos en problemas, son más villanos");
     }
