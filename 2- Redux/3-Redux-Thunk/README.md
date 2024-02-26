@@ -75,3 +75,5 @@ En tus componentes, simplemente llama a la acción creada con dispatch.
 
 ¡Y ahí lo tienes! Con redux-thunk, tu aplicación Redux está lista para manejar operaciones asíncronas como un superhéroe. 🦹‍♀️🚀 ¡Adelante y dale poder a tus acciones!
 
+
+- [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
