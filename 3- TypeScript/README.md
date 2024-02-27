@@ -120,7 +120,6 @@ Ejemplo: let numbers: number[] = [1, 2, 3, 4]; 📊
 ### Tuple (Tupla): Representa una secuencia de elementos con tipos definidos.
 Ejemplo: let person: [string, number] = ["John", 25]; 📦
 
-
 ###  Enum (Enumeración): Proporciona un conjunto de nombres descriptivos a valores numéricos.
 Ejemplo: enum Color { Red, Green, Blue }; let selectedColor: Color = Color.Red; 🌈
 
