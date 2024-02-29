@@ -1,7 +1,6 @@
 # SocialMediaApp con TypeScripts, React-Redux y Firebase
 
 ## Objetivo
-
 Evidenciar los conceptos esenciales de Typescripts, React, Redux, React-Redux y Firebase
 Evidenciar el Tipado de Datos con Typescripts
 Entender el ciclo de vida de Redux Middlewares y dispatcher
