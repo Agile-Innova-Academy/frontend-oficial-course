@@ -73,7 +73,7 @@ Para ejecutar pruebas unitarias, los desarrolladores escriben una sección de c�
 **Las pruebas unitarias son de dos tipos.**
 
 - Manual
-- automatizado
+- Atomatizado
 
 Las pruebas unitarias suelen estar automatizadas, pero aún pueden realizarse manualmente. 
 
@@ -86,7 +86,7 @@ La ingeniería de software no favorece uno sobre el otro, pero se prefiere la au
 4) Ejecutar casos de prueba.
 
 ### Técnicas de prueba unitaria
-Las técnicas de prueba unitaria se clasifican principalmente en tres partes, que son la prueba de caja negra que implica la prueba de la interfaz de usuario junto con la entrada y la salida, la prueba de caja blanca que implica probar el comportamiento funcional de la aplicación de software y la prueba de caja gris que se utiliza para ejecutar la prueba. suites, métodos de prueba, casos de prueba y realización de análisis de riesgos.
+Las técnicas de prueba unitaria se clasifican principalmente en tres partes, que son la prueba de caja negra que implica la prueba de la interfaz de usuario junto con la entrada y la salida, la prueba de caja blanca que implica probar el comportamiento funcional de la aplicación de software y la prueba de caja gris que se utiliza para ejecutar la prueba, suites, métodos de prueba, casos de prueba y realización de análisis de riesgos.
 
 Las técnicas de cobertura de código utilizadas en las pruebas unitarias se enumeran a continuación:
 
@@ -97,7 +97,7 @@ Las técnicas de cobertura de código utilizadas en las pruebas unitarias se enu
 - Cobertura de máquinas de estados finitos
 
 
-Ejemplo de prueba unitaria: 
+`Ejemplo de prueba unitaria: `
 Objetos simulados
 Las pruebas unitarias se basan en la creación de objetos simulados para probar secciones de código que aún no forman parte de una aplicación completa. Los objetos simulados reemplazan las partes faltantes del programa.
 
@@ -121,7 +121,7 @@ La verdad es que las pruebas unitarias aumentan la velocidad de desarrollo.
 
 Los programadores piensan que las pruebas de integración detectarán todos los errores y no ejecutarán la prueba unitaria. Una vez que las unidades están integradas, los errores muy simples que podrían haberse encontrado y corregido muy fácilmente en la unidad probada toman mucho tiempo para rastrearse y corregirse.
 
-## Ventaja de las pruebas unitarias
+## Ventaja de las pruebas unitarias 🌟
 Los desarrolladores que buscan saber qué funcionalidad proporciona una unidad y cómo usarla pueden consultar las pruebas de unidad para obtener una comprensión básica de la API de la unidad.
 Las pruebas unitarias permiten al programador refactorizar el código en una fecha posterior y asegurarse de que el módulo aún funcione correctamente (es decir, pruebas de regresión). El procedimiento consiste en escribir casos de prueba para todas las funciones y métodos, de modo que cada vez que un cambio cause una falla, se pueda identificar y corregir rápidamente.
 Debido a la naturaleza modular de las pruebas unitarias, podemos probar partes del proyecto sin esperar a que se completen otras.
@@ -132,11 +132,12 @@ Las pruebas unitarias, por su propia naturaleza, se centran en una unidad de có
 Se recomienda que las pruebas unitarias se utilicen junto con otras actividades de prueba.
 
 ## Mejores prácticas de pruebas unitarias
-Los casos de prueba unitaria deben ser independientes. En caso de mejoras o cambios en los requisitos, los casos de prueba unitaria no deberían verse afectados.
-Pruebe solo un código a la vez.
-Siga convenciones de nomenclatura claras y consistentes para sus pruebas unitarias
-En caso de un cambio en el código de cualquier módulo, asegúrese de que haya un caso de prueba de unidad correspondiente para el módulo y que el módulo pase las pruebas antes de cambiar la implementación.
-Los errores identificados durante las pruebas unitarias deben corregirse antes de pasar a la siguiente fase en SDLC
-Adopte un enfoque de "prueba como su código". Cuanto más código escriba sin probar, más rutas tendrá para comprobar si hay errores.
+Los casos de prueba unitaria deben ser independientes. 
+-En caso de mejoras o cambios en los requisitos, los casos de prueba unitaria no deberían verse afectados.
+- Pruebe solo un código a la vez.
+- Siga convenciones de nomenclatura claras y consistentes para sus pruebas unitarias
+- En caso de un cambio en el código de cualquier módulo, asegúrese de que haya un caso de prueba de unidad correspondiente para el módulo y que el módulo pase las pruebas antes de cambiar la implementación.
+- Los errores identificados durante las pruebas unitarias deben corregirse antes de pasar a la siguiente fase en SDLC
+- `Adopte un enfoque de "prueba como su código". Cuanto más código escriba sin probar, más rutas tendrá para comprobar si hay errores.`
 
 

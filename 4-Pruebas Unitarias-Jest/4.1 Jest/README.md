@@ -20,7 +20,6 @@ Antes de comenzar, asegúrate de tener Jest instalado en tu proyecto. Puedes hac
 ## Estructura del Proyecto 📁
 Organiza tu proyecto de la siguiente manera:
 
-
     |-- src
     |   |-- components
     |       |-- MiComponente.js
@@ -30,7 +29,6 @@ Organiza tu proyecto de la siguiente manera:
 
 ### Primeras Pruebas 👩‍💻
 Crea un archivo de prueba para tu componente, por ejemplo, MiComponente.test.js. Jest buscará automáticamente archivos con la extensión .test.js.
-
 
     // MiComponente.test.js
     import React from 'react';
