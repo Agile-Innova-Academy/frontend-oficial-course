@@ -1,4 +1,7 @@
+import { getImg } from "./components/TiposDatos";
+
 function App() {
+  getImg();
   return (
     <div className="App">
       <header className="App-header">
